@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Vacations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="images/Logo Dreams Vacations/Logo Files/For Web/Favicons/Captura-de-pantalla-2024-12-17-235006.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreams Vacations Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Icono de menú hamburguesa -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="apartado-redeban.html">Redeban</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social-media-icons">
+            <a href="https://api.whatsapp.com/message/GDK6ZZPOXABUM1?autoload=1&app_absent=0"><img src="images/Íconos/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/dreamsvacations.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/Íconos/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+    
+    <section class="heroPC">
+        <h1>Punta Cana</h1>  
+        <h2>tu Rincón Tropical en el Caribe</h2>
+    </section>
+    <section class="cancun-info">
+        <div class="cancun-text">
+            <h2>¿Por qué Punta Cana?</h2>
+            <p>Más que un destino, Punta Cana es una experiencia inolvidable que invita a descubrir la belleza tropical en su máxima expresión. Este paraíso caribeño combina playas de arena blanca y aguas turquesas con un sinfín de actividades para todos los gustos. Desde la impresionante Isla Saona, con su exuberante naturaleza y paisajes de ensueño, hasta los cenotes ocultos en el mágico Hoyo Azul, cada rincón es una obra maestra de la naturaleza. No se trata solo de disfrutar de su belleza natural, sino también de vivir aventuras únicas. Ya sea practicando snorkel, navegando en catamaranes o explorando reservas ecológicas, cada día en Punta Cana promete un descubrimiento nuevo. </p>
+        </div>
+        <div class="cancun-image">
+            <img src="images/cancún/2.jpg" alt="Imagen de Cancún" style="border-radius: 84px;">
+            <div class="availability-overlay">
+                <span class="cupo-disponible">Reserva este plan</span>
+                <span class="cupo-costo"> $4´190.000</span>
+                <span class="cupo-costo"> Por persona</span>
+                <a href="Puntacana-terminos.html" class="btn">Reserva este plan</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="actividades-destacadas">
+        <h2>Algunas actividades destacadas</h2>
+        <div class="actividades-grid">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+            <div class="actividad">
+                <img id="img1" src="images/puntacana/hoyo azul.jpg" alt="Hoyo Azul">
+                <p>Hoyo Azul</p>
+            </div>
+            <div class="actividad">
+                <img id="img1" src="images/puntacana/CAPCANA PC.jpg" alt="Cap cana">
+                <p>Cap Cana</p>
+            </div>
+            <div class="actividad">
+                <img id="imgco"src="images/puntacana/coco bongo.webp" alt="Coco bongo">
+                <p>Coco Bongo</p>
+            </div>
+            <div class="actividad">
+                <img id="imgco" src="images/puntacana/Isla Saona.jpg" alt="Isla Saona">
+                <p>Isla Saona</p>
+            </div>
+            <div class="actividad">
+                <img id="img1" src="images/puntacana/zona colonial santo domingo (1).jpg" alt="zona colonial">
+                <p>Zona colonial</p>
+             </div>
+             <div class="actividad">
+                <img id="imgco" src="images/puntacana/aventura en buggy (1).jpg" alt="Aventura Buggy">
+                <p>Aventura Buggy</p>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="destinos">
+        <p class="section-subtitle">Hoteles <br> Destacados</p>
+    <div class="destinos-row">
+        <div class="destino">
+            <a href="bahiaprincipe.html"><img src="images/BP/photo2jpg.jpg" alt="Bahía principe"></a>
+            <div class="caption">
+                <h3>BAHÍA PRÍNCIPE</h3>
+                <p class="location">PUNTA CANA</p>
+                <a href="bahiaprincipe.html">➜ Descubrir</a>
+            </div>
+        </div>
+        <div class="destino">
+            <a href="whalabavaro.html"><img src="images/puntacana/WHALABAVARO.jpg" alt="parkroyal"></a>
+            <div class="caption">
+                <h3>WHALA BÁVARO</h3>
+                <p class="location">PUNTA CANA</p>
+                <a href="whalabavaro.html">➜ Descubrir</a>
+            </div>
+        </div>
+    </div>
+    <div class="destinos-row">
+        <div class="destino">
+            <a href="occidental.html"><img src="images/occidental/1.jpg" alt="OCCIDENTAL"></a>
+            <div class="caption">
+                <h3>OCCIDENTAL</h3>
+                <p class="location">PUNTA CANA</p>
+                <a href="occidental.html">➜ Descubrir</a>
+            </div>
+        </div>
+        <div class="destino">
+            <a href="impressive.html"><img src="images/impressive/caption (5).jpg" alt="IMPRESSIVE"></a>
+            <div class="caption">
+                <h3>IMPRESSIVE</h3>
+                <p class="location">PUNTA CANA</p>
+                <a href="impressive.html">➜ Descubrir</a>
+            </div>
+        </div>
+    </div>
+    <div class="destinos-row">
+        <div class="destino">
+            <a href="hotelhm.html"><img src="images/HotelHM/BavaroBeach-Galeria-Hotel14.jpg" alt="HotelHM"></a>
+            <div class="caption">
+                <h3>Hotel HM  </h3>
+                <p> Adults Only</p> 
+                <p class="location">PUNTA CANA</p>
+                <a href="hotelhm.html">➜ Descubrir</a>
+            </div>
+        </div>
+        <div class="destino">
+            <a href="almabayahibe.html"><img src="images/Almabayahibe/DJI_20231023142147_0172_D_AIRJAVI-1.jpg" alt="ALMA BAYAHIBE"></a>
+            <div class="caption">
+                <h3>ALMA BAYAHIBE</h3>
+                <p class="location">PUNTA CANA</p>
+                <a href="almabayahibe.html">➜ Descubrir</a>
+            </div>
+        </div>
+    </div>
+    <div class="destinos-row">
+        <div class="destino">
+            <a href="catalonia.html"><img src="images/catalonia/BavaroBeach Propiedad 03.jpg" alt="catalonia"></a>
+            <div class="caption">
+                <h3>CATALONIA</h3>
+                <p class="location">PUNTA CANA</p>
+                <a href="catalonia.html">➜ Descubrir</a>
+            </div>
+        </div>
+</section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dreams Vacations. Todos los derechos reservados.</p>
+            <div class="payment-logos">
+                <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreamsvacations">
+                
+            </div>
+            <a href="RNT.pdf"><p class="rnt-code">RNT: 217613</p></a>
+        </div>
+    </footer>
+
+ </body>
+</html>

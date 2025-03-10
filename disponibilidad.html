@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Vacations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="images/Logo Dreams Vacations/Logo Files/For Web/Favicons/Captura-de-pantalla-2024-12-17-235006.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreams Vacations Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Icono de menú hamburguesa -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="apartado-redeban.html">Redeban</a></li>
+            </ul>
+        </nav>
+        <div class="social-media-icons">
+            <a href="https://api.whatsapp.com/message/GDK6ZZPOXABUM1?autoload=1&app_absent=0"><img src="images/Íconos/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/dreamsvacations.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/Íconos/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+
+    <!-- Sección Nosotros -->
+    <section class="nosotros">
+        <div class="hero-disponibilidad">
+            <h1>DISPONIBILIDAD</h1>
+            <h2>Últimas actualizaciones</h2>
+        </div>
+    </section>
+
+    
+    <section class="disponibilidad">
+        <p class="info-reserva">Información Actualizada para Reservas y Gestión Comercial</p>
+        <p class="texto-info">La disponibilidad de habitaciones se actualiza automáticamente para garantizar la precisión de la información proporcionada a nuestros clientes. Es importante destacar que cualquier oferta o promoción está sujeta a la disponibilidad y puede concluir en la fecha determinada por la gerencia o hasta agotar existencias.</p>
+        <p class="ultima-actualizacion">Última Actualización: <span id="fechaActualizacion"></span></p>
+        <script>
+                    function actualizarFechaHora() {
+                    var now = new Date();
+                    var fechaHora = now.toLocaleString('es-CO', { timeZone: 'America/Bogota' }); // Configura la zona horaria a Bogotá, Colombia
+                    document.getElementById('fechaActualizacion').innerHTML = 'Fecha Actual: ' + fechaHora;
+                }
+
+                // Actualiza la fecha y hora cada segundo
+                setInterval(actualizarFechaHora, 1000);
+
+                // Asegúrate de actualizar la fecha y hora tan pronto como se carga la página
+                window.onload = actualizarFechaHora;
+
+        </script>
+        <div class="contenedorTarjetasD">
+            <div class="tarjetaD">
+                <div class="numeroHabitacionesD">3 Habitaciones</div>
+                <div class="destinoD">Cancún / México</div>
+                <a href="cancun.html" class="btnD">Reservar Ahora</a>
+            </div>
+            <div class="tarjetaD">
+                <div class="numeroHabitacionesD">5 Habitaciones</div>
+                <div class="destinoD">Estados Unidos</div>
+                <a href="contactanos.html" class="btnD">Reservar Ahora</a>
+            </div>
+            <div class="tarjetaD">
+                <div class="numeroHabitacionesD">3 Habitaciones</div>
+                <div class="destinoD">Punta Cana / Rep. Dominicana</div>
+                <a href="puntacana.html" class="btnD">Reservar Ahora</a>
+            </div>
+        </div>
+        
+
+    </section>
+<section class="tyc1">
+    <p class="tyc">- Al concluir la oferta, los precios volverán a lo habitual. Para aprovechar la promoción, complete los T&C y realice el pago total.</p>
+        <p class="tyc">- Post oferta, precios normales. Asegure su promoción completando los T&C, enviando documentos y pagando en total.</p>
+        <p class="tyc-CEO">Gerencia Dreams Vacations</p>
+
+    </section>
+    
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dreams Vacations. Todos los derechos reservados.</p>
+            <div class="payment-logos">
+                <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreamsvacations">
+                
+            </div>
+            <a href="RNT.pdf"><p class="rnt-code">RNT: 217613</p></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Vacations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="images/Logo Dreams Vacations/Logo Files/For Web/Favicons/Captura-de-pantalla-2024-12-17-235006.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreams Vacations Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Icono de menú hamburguesa -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="apartado-redeban.html">Redeban</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social-media-icons">
+            <a href="https://api.whatsapp.com/message/GDK6ZZPOXABUM1?autoload=1&app_absent=0"><img src="images/Íconos/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/dreamsvacations.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/Íconos/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+    
+    <section class="heroSD">
+        <h1>Santo Domingo</h1>  
+        <h2>!Donde la Historia y el Caribe se Unen!</h2>
+    </section>
+    <section class="cancun-info">
+        <div class="cancun-text">
+            <h2>¿Por qué Santo Domingo?</h2>
+            <p>Es más que una ciudad; es un viaje a través de la historia, donde el pasado se fusiona con el presente de una manera única. Cada rincón tiene una historia que contar, desde sus monumentos hasta sus callejones pintorescos, todo tiene un significado especial. Pero lo que realmente hace que este lugar sea inolvidable es su calidez caribeña. La gente, la música, los colores vibrantes y el aroma al mar crean una atmósfera acogedora, invitando a cada visitante a descubrir algo nuevo en cada esquina. Aquí, cada momento se convierte en una oportunidad para sumergirse en una experiencia única, llena de tradición, sabor y nuevas sorpresas.</p>
+        </div>
+        <div class="cancun-image">
+            <img src="images/cancún/2.jpg" alt="Imagen de Cancún" style="border-radius: 84px;">
+            <div class="availability-overlay">
+                <span class="cupo-disponible">Reserva este plan</span>
+                <span class="cupo-costo"> $3´490.000</span>
+                <span class="cupo-costo"> Por persona</span>
+                <a href="#reserva" class="btn">Reserva este plan</a>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="actividades-destacadas">
+        <h2>Algunas actividades destacadas</h2>
+        <div class="actividades-grid">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+
+        <div class="actividades-grid">
+            <div class="actividad">
+                <img id="imgco" src="images/santodomingo/malecon-santo-domingo.jpg" alt="Malecón">
+                <p>Malecón</p>
+            </div>
+            <div class="actividad">
+                <img id="imgco" src="images/santodomingo/LosTresOjos.jpeg" alt="Tres Ojos">
+                <p>Tres Ojos</p>
+            </div>
+            <div class="actividad">
+                <img id="imgco" src="images/santodomingo/museo2.jpg" alt="Museo Ambar">
+                <p>Museo Ambar</p>
+            </div>
+            <div class="actividad">
+                <img id="imgco" src="images/santodomingo/colonialzona.jpg" alt="Zona colonial">
+                <p>Zona Colonial</p>
+            </div>
+            <div class="actividad">
+                <img id="img1" src="images/santodomingo/JARDIN1.jpeg.jpg" alt="Jardín Botánico">
+                <p>Jardin Botanico</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinos">
+        <p class="section-subtitle">Hoteles <br> Destacados</p>
+    <div class="destinos-row">
+        <div class="destino">
+            <a href="tropicana.html"><img src="images/santodomingo/TROPICANA SD.jpeg.jpg" alt="All ritmo"></a>
+            <div class="caption">
+                <h3>TROPICANA</h3>
+                <p class="location">SANTO DOMINGO</p>
+                <a href="tropicana.html">➜ Descubrir</a>
+            </div>
+        </div>
+        <div class="destino">
+            <a href="dominicanfiesta.html"><img src="images/santodomingo/DOMINICAN FIESTA 1.jpg" alt="parkroyal"></a>
+            <div class="caption">
+                <h3>DOMINICAN FIESTA</h3>
+                <p class="location">SANTO DOMINGO</p>
+                <a href="dominicanfiesta.html">➜ Descubrir</a>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Dreams Vacations. Todos los derechos reservados.</p>
+            <div class="payment-logos">
+                <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreamsvacations">
+                
+            </div>
+            <a href="RNT.pdf"><p class="rnt-code">RNT: 217613</p></a>
+        </div>
+    </footer>
+
+ </body>
+</html>

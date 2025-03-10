@@ -1,0 +1,288 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0D0D0D;
+    font-family: 'Lora', serif;
+}
+
+header .logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+.menu-icon {
+    display: none; /* Ocultar por defecto */
+    font-size: 30px; /* Tamaño del ícono de menú */
+    cursor: pointer;
+    color: #E4DA8E;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin:30px; /* Espaciado entre los elementos de navegación */
+}
+
+nav ul li a {
+    color: #E4DA8E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #ECAC60;
+}
+ 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #E4DA8E;
+
+}
+
+@media (max-width: 768px) {
+    .menu-icon  {
+        display: block; /* Muestra el menú hamburguesa en móvil */
+    }
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.herocancun {
+    background-image: url('images/cancún/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Lora', serif;
+    height: 60vh;
+    align-items: flex-start;
+}
+
+
+
+.herocancun h1 {
+    font-size: 4rem; /* Tamaño grande para pantallas grandes */
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 0px;
+    margin-left: 80%;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+
+.herocancun h2 {
+    font-size: 2rem; /* Tamaño adecuado para subtítulos */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-left: 55%;
+    margin-top: 0;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+@media (max-width: 1024px) {
+    .herocancun h1 {
+        font-size: 3rem; /* Tamaño reducido para tabletas */
+        margin-left: 2%; /* Menos margen debido al espacio reducido */
+    }
+    .herocancun h2 {
+        font-size: 1.5rem; /* Tamaño ajustado para subtítulos en tabletas */
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .herocancun h1 {
+        font-size: 2.5rem; /* Tamaño más pequeño para dispositivos móviles */
+        margin-left: 0; /* Eliminar margen para centrar en móviles */
+    }
+    .herocancun h2 {
+        font-size: 1.2rem; /* Más pequeño para que se ajuste a móviles */
+        margin-left: 0; /* Centrado en móviles */
+    }
+    .herocancun {
+        padding: 10% 5%; /* Padding más generoso para más espacio en móviles */
+    }
+}@media (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar ícono de menú */
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Ocultar menú inicialmente */
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #0D0D0D;
+    }
+
+    nav ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+.container {
+    width: 60%; /* Ajuste de la anchura del contenedor principal */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre grupos de formulario */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="checkbox"][type="date"],
+select,
+.input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select {
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #003A81; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #F0E595;
+}
+
+
+
+
+
+#terms label {
+    display: flex;
+    align-items: center; /* Asegura que el texto y el checkbox estén alineados verticalmente */
+    margin-bottom: 10px; /* Espacio entre cada término */
+    padding-left: 20px; /* Añade un poco de padding a la izquierda para alinear los textos correctamente */
+}
+
+#terms input[type="checkbox"] {
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
+
+
+
+
+.herop {
+    background-image: url('images/puntacana/PUNTA\ CANA1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Lora', serif;
+    height: 60vh;
+    align-items: flex-start;
+}
+
+
+
+.herop h1 {
+    font-size: 3.5rem; /* Tamaño grande para pantallas grandes */
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 0px;
+    margin-left: 70%;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+
+.herop h2 {
+    font-size: 2rem; /* Tamaño adecuado para subtítulos */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-left: 55%;
+    margin-top: 0;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+@media (max-width: 1024px) {
+    .herop h1 {
+        font-size: 3rem; /* Tamaño reducido para tabletas */
+        margin-left: 2%; /* Menos margen debido al espacio reducido */
+    }
+    .herop h2 {
+        font-size: 1.5rem; /* Tamaño ajustado para subtítulos en tabletas */
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .herop h1 {
+        font-size: 2.5rem; /* Tamaño más pequeño para dispositivos móviles */
+        margin-left: 0; /* Eliminar margen para centrar en móviles */
+    }
+    .herop h2 {
+        font-size: 1.2rem; /* Más pequeño para que se ajuste a móviles */
+        margin-left: 0; /* Centrado en móviles */
+    }
+    .herop {
+        padding: 10% 5%; /* Padding más generoso para más espacio en móviles */
+    }
+}

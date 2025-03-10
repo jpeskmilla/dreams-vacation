@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreams Vacations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/Logo Dreams Vacations/Logo Files/For Web/Favicons/Captura-de-pantalla-2024-12-17-235006.ico" type="image/x-icon">
+    <meta name="description" content="Descubre tu próximo destino de ensueño con Dreams Vacations. Ofrecemos experiencias vacacionales únicas en Cancún, Punta Cana y Santo Domingo. Planifica la aventura perfecta con paquetes todo incluido y soporte completo para una escapada inolvidable. ¡Explora más y reserva hoy!">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreams Vacations Logo">
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Icono de menú hamburguesa -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="contactanos.html">Contáctanos</a></li>
+                <li><a href="apartado-redeban.html">Redeban</a></li>
+            </ul>
+        </nav>
+        
+        <div class="social-media-icons">
+            <a href="https://api.whatsapp.com/message/GDK6ZZPOXABUM1?autoload=1&app_absent=0"><img src="images/Íconos/whatsapp.png" alt="WhatsApp"></a>
+            <a href="https://www.instagram.com/dreamsvacations.co?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="images/Íconos/instagram.png" alt="Instagram"></a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>HAZ REALIDAD TUS VACACIONES SOÑADAS</h1>
+        <p>¡Quedan pocos cupos disponibles!</p>
+        <button onclick="location.href='destinos.html'">Planear mi próxima aventura</button>
+    </section>
+
+    <section class="destinos">
+        <h2 class="section-title">Nuestros destinos</h2>
+        <p class="section-subtitle">Tu aventura comienza aquí</p>
+        <div class="destino grande">
+            <a href="cancun.html"><img src="images/imainicio/cancun2.jpg" alt="Cancún México"></a>
+            <div class="caption">
+                <h3>CANCÚN</h3>
+                <p class="location">MÉXICO</p>
+                <a href="cancun.html">➜ Descubrir</a>
+            </div>
+        </div>
+        <div class="destinos-row">
+            <div class="destino">
+                <a href="puntacana.html"><img src="images/imainicio/puntacana.jpg" alt="Punta Cana República Dominicana"></a>
+                <div class="caption">
+                    <h3>PUNTA CANA</h3>
+                    <p class="location">REPUBLICA DOMINICANA</p>
+                    <a href="puntacana.html">➜ Descubrir</a>
+                </div>
+            </div>
+            <div class="destino">
+                <a href="santodomingo.html"><img src="images/imainicio/santodomingo.png" alt="Santo Domingo República Dominicana"></a>
+                <div class="caption">
+                    <h3>SANTO DOMINGO</h3>
+                    <p class="location">REPUBLICA DOMINICANA</p>
+                    <a href="santodomingo.html">➜ Descubrir</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="carousel">
+    <div class="carousel-wrapper">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="images/imainicio/primeracarrusel.png" alt="First Image" class="carousel-image">
+                <img src="images/imainicio/segundacarrusel.png" alt="Second Image" class="carousel-image">
+                <img src="images/imainicio/terceracarrusel.png" alt="Third Image" class="carousel-image">
+                <img src="images/imainicio/cuartacarrusel.png" alt="Fourth Image" class="carousel-image">
+                <!-- Repetir las imágenes -->
+                <img src="images/imainicio/primeracarrusel.png" alt="First Image" class="carousel-image">
+                <img src="images/imainicio/segundacarrusel.png" alt="Second Image" class="carousel-image">
+                <img src="images/imainicio/terceracarrusel.png" alt="Third Image" class="carousel-image">
+                <img src="images/imainicio/cuartacarrusel.png" alt="Fourth Image" class="carousel-image">
+                <img src="images/imainicio/primeracarrusel.png" alt="First Image" class="carousel-image">
+                <img src="images/imainicio/segundacarrusel.png" alt="Second Image" class="carousel-image">
+                <img src="images/imainicio/terceracarrusel.png" alt="Third Image" class="carousel-image">
+                <img src="images/imainicio/cuartacarrusel.png" alt="Fourth Image" class="carousel-image">
+            </div>
+            
+        </div>
+        <div class="carousel-indicators">
+            <span class="carousel-indicator"></span>
+            <span class="carousel-indicator"></span>
+            <span class="carousel-indicator"></span>
+        </div>
+    </div>
+  </section>
+  <section class="trusted-hotels">
+    <div class="hotels-content">
+        <div class="hotel-images">
+            <img src="images/imainicio/hoteles.jpg" alt="Hotel 1" class="hotel-img">
+          
+        </div>
+        <div class="hotels-info">
+            <h2>HOTELES DE CONFIANZA</h2>
+            <p>Los mejores hoteles para garantizarte una experiencia única en cada destino.</p>
+            <ul class="hotels-list">
+                <a href="allritmo.html"><li><i class="material-icons">hotel</i> ALL RITMO</li></a>
+                <a href="parkroyal.html"><li><i class="material-icons">hotel</i> PARK ROYAL</li></a>
+                <a href="onvacationbluereef.html"><li><i class="material-icons">hotel</i> ON VACATION BLUE REEF</li></a>
+                <a href="bahiaprincipe.html"><li><i class="material-icons">hotel</i> BAHÍA PRÍNCIPE GRAND TURQUESA</li></a>
+                <a href="whalabavaro.html"><li><i class="material-icons">hotel</i> WHALA BÁVARO</li></a>
+            </ul>
+           
+        </div>
+    </div>
+</section>
+
+<section class="defining-features">
+    <h2>LO QUE NOS DEFINE</h2>
+    <div class="features-grid">
+        <div class="feature">
+            <span class="material-icons">flight_takeoff</span>
+            <h3>EXPERIENCIAS ÚNICAS</h3>
+            <p>Creamos en ofrecer viajes que se convierten en recuerdos para toda la vida. Cada destino está diseñado para conectar contigo y sorprenderte.</p>
+        </div>
+        <div class="feature">
+            <span class="material-icons">supervisor_account</span>
+            <h3>ACOMPAÑAMIENTO</h3>
+            <p>Te guiamos en cada paso de tu viaje para asegurarnos de que todo sea perfecto, desde la planificación hasta tu regreso.</p>
+        </div>
+        <div class="feature">
+            <span class="material-icons">explore</span>
+            <h3>VARIEDAD</h3>
+            <p>Desde playas paradisíacas hasta ciudades vibrantes, te ofrecemos las mejores opciones para vivir la aventura que deseas.</p>
+        </div>
+        <div class="feature">
+            <span class="material-icons">thumb_up</span>
+            <h3>COMPROMISO</h3>
+            <p>Nos respaldan años de experiencia y un equipo que trabaja para hacer realidad tus sueños de viaje.</p>
+        </div>
+    </div>
+</section>
+<section class="carousel2">
+    <div class="carousel-wrapper2">
+        <div class="carousel-container2">
+            <div class="carousel-slide2">
+                <img src="images/Íconos/barcelo.png" alt="First Image" class="carousel-image2">
+                <img src="images/Íconos/camaradecomercio.png" alt="Second Image" class="carousel-image2">
+                <img src="images/Íconos/hilton.png" alt="Third Image" class="carousel-image2">
+                <img src="images/Íconos/mastercard.png" alt="Fourth Image" class="carousel-image2">
+                <img src="images/Íconos/puntacana.png" alt="Fourth Image" class="carousel-image2">
+                <img src="images/Íconos/riu.png" alt="Fourth Image" class="carousel-image2">
+                <img src="images/Íconos/bold.jpeg" alt="Fourth Image" class="carousel-image2">
+                <!-- Repetir las imágenes -->
+                <img src="images/Íconos/barcelo.png" alt="First Image" class="carousel-image2">
+                <img src="images/Íconos/camaradecomercio.png" alt="Second Image" class="carousel-image2">
+                <img src="images/Íconos/hilton.png" alt="Third Image" class="carousel-image2">
+                <img src="images/Íconos/mastercard.png" alt="Fourth Image" class="carousel-image2">
+                <img src="images/Íconos/puntacana.png" alt="Fourth Image" class="carousel-image2">
+                <img src="images/Íconos/riu.png" alt="Fourth Image" class="carousel-image2">
+                <img src="images/Íconos/bold.jpeg" alt="Fourth Image" class="carousel-image2">
+            </div>
+            
+        </div>
+        <div class="carousel-indicators">
+            <span class="carousel-indicator"></span>
+            <span class="carousel-indicator"></span>
+            <span class="carousel-indicator"></span>
+        </div>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Dreams Vacations. Todos los derechos reservados.</p>
+        <div class="payment-logos">
+            <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreamsvacations">
+            
+        </div>
+        <a href="RNT.pdf"><p class="rnt-code">RNT: 217613</p></a>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
