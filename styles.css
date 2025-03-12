@@ -132,6 +132,32 @@ nav ul li a.active {
     font-size: 2em;
     margin: 5px 0 20px 0; /* Reduce el margen superior para acercar al título */
 }
+
+.banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 0; /* Ajusta el padding según sea necesario */
+    margin: 20px 0;
+}
+
+.banner img {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.banner:hover img {
+    filter: brightness(70%); /* Oscurece la imagen al pasar el cursor */
+}
+
 .destino:hover img {
     transform: scale(1.1); /* Agrandar la imagen al pasar el cursor */
     filter: brightness(70%); /* Oscurece la imagen al pasar el cursor */
@@ -202,40 +228,40 @@ nav ul li a.active {
 
 .caption h3 {
     margin: 5px 0;
-    font-family: 'Bebas neue';
-    font-size: 8em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 7vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #000 2px 2px 2px;
 }
 
 .caption h2 {
-    margin: 0;
-    font-family: 'Bebas neue';
-    font-size: 4em;
+    margin: 0px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #000 1px 1px 2px;
 }
 
 .caption h1 {
     margin: -9px;
-    font-family: 'Bebas neue', sans-serif;
-    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #000 1px 1px 2px;
     margin-bottom: 1em;
 }
 
-.caption p{
-    position: relative;
-    font-family: 'Bebas New', sans-serif;
-    font-size: 2.3em;
-    top: -50px;
-    padding-bottom: -10px;
+.caption p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
+    text-shadow: #000 1px 1px 2px;
+    margin-top: -0.8em;
 }
+
 .caption a {
-    font-family: 'Funnel Display', sans-serif, black;
+    font-family: 'Funnel Display', sans-serif;
     color: #ffffff;
     text-decoration: none;
     display: block;
     margin-top: -10px;
-    font-size: 1.5em;
+    font-size: 1.5vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #000 1px 1px 2px;
 }
 
