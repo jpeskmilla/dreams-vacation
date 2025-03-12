@@ -177,53 +177,66 @@ nav ul li a.active {
 
 .destino img {
     width: 90vh;
-    display: block;
     height: auto;
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
+.location {
+    text-shadow: #000 2px 2px 2px;
+}
+
 .caption {
     position: absolute;
-    top: 70%;
-    left: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0);
     color: white;
-    padding: 10px;
     text-align: center;
 }
 
 .caption h3 {
-    margin: 0;
+    margin: 5px 0;
     font-family: 'Bebas neue';
-    font-size: 4em;
-    margin-bottom: 1px;
+    font-size: 8em;
     text-shadow: #000 2px 2px 2px;
 }
 
 .caption h2 {
     margin: 0;
     font-family: 'Bebas neue';
-    font-size: 1.5em;
+    font-size: 4em;
     text-shadow: #000 1px 1px 2px;
 }
 
+.caption h1 {
+    margin: -9px;
+    font-family: 'Bebas neue', sans-serif;
+    font-size: 2em;
+    text-shadow: #000 1px 1px 2px;
+    margin-bottom: 1em;
+}
+
 .caption p{
-    
-    font-family: 'Funnel Display', sans-serif;
-    margin: 0 0 5px 0;
-  
-    left: 60%;
-
-
+    position: relative;
+    font-family: 'Bebas New', sans-serif;
+    font-size: 2.3em;
+    top: -50px;
+    padding-bottom: -10px;
 }
 .caption a {
-    font-family: 'Roboto Slab', black;
+    font-family: 'Funnel Display', sans-serif, black;
     color: #ffffff;
     text-decoration: none;
     display: block;
-    margin-top: 1px;
+    margin-top: -10px;
+    font-size: 1.5em;
+    text-shadow: #000 1px 1px 2px;
 }
 
 /* Ajustes responsivos */
