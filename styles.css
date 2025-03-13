@@ -216,28 +216,29 @@ nav ul li a.active {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
 
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    left: 45%;
     transform: translate(-50%, -50%);
     width: 100%;
     background-color: rgba(36, 20, 20, 0);
     color: white;
-    text-align: center;
+    text-align: right;
 }
 
-.caption h3 {
+.caption h3 {   
     margin: 5px 0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 7vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
+    font-size: 6vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #00000079 2px 2px 2px;
 }
 
 .caption h2 {
+    padding-top: -10px;   
     margin: 0px 0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
+    font-size: 2vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #0000009c 1px 1px 2px;
     letter-spacing: 1.5px;
 }
@@ -245,10 +246,11 @@ nav ul li a.active {
 .caption h1 {
     margin: -9px;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
+    font-size: 1vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #00000079 1px 1px 2px;
     margin-bottom: 1em;
     letter-spacing: 1.5px;
+    padding-right: 10px;
 }
 
 .caption p {
@@ -266,6 +268,8 @@ nav ul li a.active {
     margin-top: -10px;
     font-size: 1.5vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
     text-shadow: #000 1px 1px 2px;
+    padding-bottom: 50px;
+
 }
 
 /* Ajustes responsivos */
@@ -574,13 +578,36 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    font-family: "Funnel Display", sans-serif;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
 }
 
 .payment-logos img {
@@ -588,17 +615,16 @@ footer {
     width: 150px; /* Ajusta el tamaño según necesites */
 }
 
-.rnt-code  {
+.rnt-code {
     font-size: 0.8em;
     margin-top: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-
 }
+
 .rnt-code:hover {
     color: #777;
     text-decoration: none;
-    
 }
 
 @media (max-width: 768px) {
