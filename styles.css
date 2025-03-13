@@ -146,6 +146,7 @@ nav ul li a.active {
 
 .banner img {
     position: relative;
+    display: flex;
     top: 50%;
     left: 5%;
     width: 90%;
@@ -195,14 +196,14 @@ nav ul li a.active {
 }
 
 .destinos-row {
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-around;
-    margin-top: 8px; /* Added space above the row for visual separation */
+    margin-top: 3px; /* Added space above the row for visual separation */
 }
 
 .destino img {
-    width: 90vh;
+    width: 120vh;
     height: auto;
     transition: filter 0.3s ease, transform 0.3s ease;
 }
@@ -221,7 +222,7 @@ nav ul li a.active {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(36, 20, 20, 0);
     color: white;
     text-align: center;
 }
@@ -230,22 +231,24 @@ nav ul li a.active {
     margin: 5px 0;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 7vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
-    text-shadow: #000 2px 2px 2px;
+    text-shadow: #00000079 2px 2px 2px;
 }
 
 .caption h2 {
     margin: 0px 0;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
-    text-shadow: #000 1px 1px 2px;
+    text-shadow: #0000009c 1px 1px 2px;
+    letter-spacing: 1.5px;
 }
 
 .caption h1 {
     margin: -9px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2vw; /* Ajusta el tamaño de la letra según el ancho de la ventana */
-    text-shadow: #000 1px 1px 2px;
+    text-shadow: #00000079 1px 1px 2px;
     margin-bottom: 1em;
+    letter-spacing: 1.5px;
 }
 
 .caption p {
