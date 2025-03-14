@@ -133,30 +133,105 @@ nav ul li a.active {
     margin: 5px 0 20px 0; /* Reduce el margen superior para acercar al título */
 }
 
-.banner {
+/* ...existing code... */
+
+/* Carrusel de banners actualizado */
+.banner-carousel {
+    width: 90%;
+    max-width: 800vw;
+    max-height: 700vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.banner-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+#banner-slide {
     position: relative;
     width: 100%;
+    height: 100vh; /* Aumentamos la altura para imágenes más grandes */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
-    padding: 0; /* Ajusta el padding según sea necesario */
-    margin: 20px 0;
+    overflow: hidden;
 }
 
-.banner img {
-    position: relative;
-    display: flex;
-    top: 50%;
-    left: 5%;
+.banner-image {
+    margin: 100px;
     width: 90%;
     height: auto;
-    border-radius: 10px;
-    transition: filter 0.3s ease, transform 0.3s ease;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    opacity: 0; /* Comenzamos con todas las imágenes invisibles */
+    transition: opacity 0.8s ease; /* Animación de fundido */
+    border-radius: 68px
 }
 
-.banner:hover img {
-    filter: brightness(70%); /* Oscurece la imagen al pasar el cursor */
+.banner-image.active {
+    opacity: 1; /* Solo la imagen activa es visible */
+}
+
+/* Controles de navegación */
+.banner-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.banner-control:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.banner-prev {
+    left: 10px;
+}
+
+.banner-next {
+    right: 10px;
+}
+
+/* Indicadores */
+.banner-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.banner-indicator {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-indicator.active {
+    background-color: #3368fc;
 }
 
 .destino:hover img {
@@ -337,6 +412,7 @@ nav ul li a.active {
 
 .carousel-slide {
     display: flex;
+    overflow: hidden;
 }
 
 .carousel-image {
@@ -344,6 +420,8 @@ nav ul li a.active {
     flex-shrink: 0;
     height: auto;
     margin-right: 130px; /* Espacio entre imágenes */
+    padding: 10px;
+    border-radius: 50;
 }
 
 .carousel-indicators {

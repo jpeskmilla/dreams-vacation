@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/Logo Dreams Vacations/Logo Files/For Web/Favicons/Captura-de-pantalla-2024-12-17-235006.ico" type="image/x-icon">
     <meta name="description" content="Descubre tu próximo destino de ensueño con Dreams Vacations. Ofrecemos experiencias vacacionales únicas en Cancún, Punta Cana y Santo Domingo. Planifica la aventura perfecta con paquetes todo incluido y soporte completo para una escapada inolvidable. ¡Explora más y reserva hoy!">
-
 </head>
+
+
 <body>
     <header>
         <div class="logo">
             <img src="images/Logo Dreams Vacations/Logo Files/For Web/png/Color logo - no background.png" alt="Dreams Vacations Logo">
+            
         </div>
         <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Icono de menú hamburguesa -->
         <nav id="navbar">
@@ -41,10 +43,23 @@
         <p>¡Quedan pocos cupos disponibles!</p>
         <button onclick="location.href='destinos.html'">Planear mi próxima aventura</button>
     </section>
-    <section class="banner">
-        <a href="destinos.html">
-            <img src="images/imainicio/banner-pagina-principal.png" alt="Banner"><img/>
-        </a>
+
+    <script src="banner-carousel.js"></script>
+    <section class="banner-carousel">
+        <div class="banner-wrapper">
+            <div id="banner-slide">
+                <img src="images/imainicio/banner-pagina-principal.png" alt="Banner 1" class="banner-image">
+                <img src="images/imainicio/banner2.png" alt="Banner 2" class="banner-image">
+            </div>
+            
+            <button class="banner-control banner-prev">&lt;</button>
+            <button class="banner-control banner-next">&gt;</button>
+            
+            <div class="banner-indicators">
+                <span class="banner-indicator active"></span>
+                <span class="banner-indicator"></span>
+            </div>
+        </div>
     </section>
 
     <section class="destinos">
@@ -123,12 +138,12 @@
             <span class="carousel-indicator"></span>
         </div>
     </div>
-  </section>
-  <section class="trusted-hotels">
+    </section>
+    <section class="trusted-hotels">
     <div class="hotels-content">
         <div class="hotel-images">
             <img src="images/imainicio/hoteles.jpg" alt="Hotel 1" class="hotel-img">
-          
+            
         </div>
         <div class="hotels-info">
             <h2>HOTELES DE CONFIANZA</h2>
