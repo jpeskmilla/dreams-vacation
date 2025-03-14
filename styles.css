@@ -197,14 +197,17 @@ nav ul li a.active {
 
 .destinos-row {
     width: 98%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     margin-top: 3px; /* Added space above the row for visual separation */
 }
 
 .destino img {
-    width: 120vh;
-    height: auto;
+    width: 100vh; /* Ajusta este valor según necesidad, puede ser también un valor en px */
+    height: 85vh; /* Puedes ajustar la altura para mantener proporción */
+    object-fit: cover; /* Para asegurarte de que se recorte bien sin deformar */
+    border-radius: 15px;
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
@@ -612,7 +615,10 @@ footer {
 
 .payment-logos img {
     margin: 5px;
-    width: 150px; /* Ajusta el tamaño según necesites */
+    width: 150px; /* Mantenemos este tamaño o puedes ajustarlo si lo necesitas */
+    height: auto; /* Importante: permite mantener la proporción */
+    max-height: none; /* Elimina cualquier restricción de altura máxima */
+    display: block; /* Asegura que se muestre como bloque */
 }
 
 .rnt-code {
@@ -3466,24 +3472,6 @@ button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* APARTADO REDEBAN*/
 
 
 
