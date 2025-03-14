@@ -3472,10 +3472,120 @@ button:hover {
 
 
 
+.heroBC{
+    background-image: url('images/bocachica/bocachica_banner.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Lora', serif;
+    height: 60vh;
+    align-items: flex-start;
+}
+
+.heroBC h1 {
+    font-size: 4rem; /* Tamaño grande para pantallas grandes */
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 0px;
+    margin-left: 70%;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */    
+}
+
+.heroBC h2 {
+    font-size: 2rem; /* Tamaño adecuado para subtítulos */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-left: 70%;
+    margin-top: 0;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+@media (max-width: 1024px) {
+    .heroBC h1 {
+        font-size: 3rem; /* Tamaño reducido para tabletas */
+        margin-left: 2%; /* Menos margen debido al espacio reducido */
+    }
+    .heroBC h2 {
+        font-size: 1.5rem; /* Tamaño ajustado para subtítulos en tabletas */
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroBC h1 {
+        font-size: 2.5rem; /* Tamaño más pequeño para dispositivos móviles */
+        margin-left: 0; /* Eliminar margen para centrar en móviles */
+    }
+    .heroBC h2 {
+        font-size: 1.2rem; /* Más pequeño para que se ajuste a móviles */
+        margin-left: 0; /* Centrado en móviles */
+    }
+    .heroBC {
+        padding: 10% 5%; /* Padding más generoso para más espacio en móviles */
+    }
+}
 
 
 
 
 
 
+/*Estados Unidos*/
+.heroUSA {
+    background-image: url('images/estadosunidos/usa1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Lora', serif;
+    height: 60vh;
+    align-items: flex-start;
+}
 
+.heroUSA h1 {
+    font-size: 4rem; /* Tamaño grande para pantallas grandes */
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px; /* Espaciado entre letras */
+    margin-bottom: 0px;
+    margin-left: 70%;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+.heroUSA h2 {
+    font-size: 2rem; /* Tamaño adecuado para subtítulos */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-left: 70%;
+    margin-top: 0;
+    transition: font-size 0.3s ease; /* Suaviza el cambio de tamaño al ajustar la pantalla */
+}
+
+@media (max-width: 1024px) {
+    .heroUSA h1 {
+        font-size: 3rem; /* Tamaño reducido para tabletas */
+        margin-left: 2%; /* Menos margen debido al espacio reducido */
+    }
+    .heroUSA h2 {
+        font-size: 1.5rem; /* Tamaño ajustado para subtítulos en tabletas */
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroUSA h1 {
+        font-size: 2.5rem; /* Tamaño más pequeño para dispositivos móviles */
+        margin-left: 0; /* Eliminar margen para centrar en móviles */
+    }
+    .heroUSA h2 {
+        font-size: 1.2rem; /* Más pequeño para que se ajuste a móviles */
+        margin-left: 0; /* Centrado en móviles */
+    }
+    .heroUSA {
+        padding: 10% 5%; /* Padding más generoso para más espacio en móviles */
+    }
+}
