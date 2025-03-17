@@ -222,7 +222,7 @@ function generatePDF() {
     doc.text(`Destino: ${destination}`, 10, 110);
 
     let terms = [
-        "TERMINOS Y CONDICIONES",
+        "TERMINOS Y CONDICIONES",   
         "1. Comprendo que tengo 12 meses para utilizar el Plan Vacacional siempre y cuando reserve con 60 o 90 días de anterioridad dependiendo de la temporada en la que se realice su viaje.",
         "2. Comprendo que adquiero Cancún el cual incluye: 5 días y 4 noches de alojamiento, alimentación (desayuno, almuerzo, cenas), platos a la carta, snacks, bebidas nacionales, propinas e impuestos hoteleros.",
         "3. Soy consciente que este plan NO INCLUYE tiquetes aéreos, transportes terrestres y tours. Los serviciosque no estén incluidos dentro del plan tales como: Habitación vista al mar o temáticas, servicios de guardería o niñeras, entre otros, se deben solicitar directamente en el Hotel y tiene un costo adicional.",

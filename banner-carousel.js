@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
     slides[0].classList.add('active');
     updateCarousel();
     
-    // Rotación automática
-    let autoRotate = setInterval(moveToNextSlide, 5000);
+    // Rotación automática - AUMENTADO A 10 SEGUNDOS
+    let autoRotate = setInterval(moveToNextSlide, 10000);
 
     // Detener rotación automática al interactuar con el carrusel
     slideContainer.addEventListener('mouseenter', () => {
@@ -65,6 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     slideContainer.addEventListener('mouseleave', () => {
         clearInterval(autoRotate);
-        autoRotate = setInterval(moveToNextSlide, 5000);
+        autoRotate = setInterval(moveToNextSlide, 10000);
     });
 });

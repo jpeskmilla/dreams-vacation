@@ -61,15 +61,17 @@ function formatoMoneda(input) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.form-horizontal');
+
     form.addEventListener('submit', function(event) {
         const fechaVencimiento = document.getElementById('fecha_vencimiento');
-        const regex = /^(0[1-9]|1[0-2])\/\d{4}$/; // Formato mm/aaaa
+        const regex = /^\d{4}-(0[1-9]|1[0-2])$/; // Formato yyyy-mm
 
         if (!regex.test(fechaVencimiento.value)) {
-            alert('Por favor, introduzca la fecha de vencimiento en formato mm/aaaa.');
+            alert('Por favor, introduzca una fecha válida en formato AAAA-MM.');
             event.preventDefault(); // Detener el envío del formulario
             fechaVencimiento.focus(); // Enfocar el campo para corrección
         }
     });
 });
+
 
