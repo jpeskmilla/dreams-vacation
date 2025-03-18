@@ -171,13 +171,29 @@ nav ul li a.active {
     top: 0;
     left: 0%;
     opacity: 0; /* Comenzamos con todas las imágenes invisibles */
-    transition: opacity 0.8s ease; /* Animación de fundido */
+    transition: opacity 0.8s ease, transform 0.5s ease, filter 0.4s ease; /* Transición más completa */
     border-radius: 68px
 }
 
 .banner-image.active {
     opacity: 1; /* Solo la imagen activa es visible */
 }
+
+/* Asegúrate de que solo las imágenes visibles muestren el efecto */
+#banner-slide a .banner-image:not(.active) {
+    pointer-events: none; /* Deshabilita interacciones en imágenes no activas */
+}
+
+#banner-slide a {
+    cursor: pointer; /* Asegura que el cursor sea pointer en toda el área */
+}
+
+#banner-slide a:hover .banner-image {
+    transform: scale(1.03);
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
 
 /* Controles de navegación */
 .banner-control {
