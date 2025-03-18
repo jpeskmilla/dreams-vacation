@@ -42,128 +42,81 @@
    
     <div class="container">
         <h1>Formulario de Registro</h1>
-        <form id="registrationForm">
-            <div class="form-group">
-                <label for="fullName">Nombre y Apellidos:</label>
-                <input type="text" id="fullName" name="fullName" required>
-            </div>
-            <div class="form-group">
-                <label for="documentNumber">Número de documento:</label>
-                <input type="text" id="documentNumber" name="documentNumber" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="contactNumber">Número de contacto:</label>
-                <input type="text" id="contactNumber" name="contactNumber" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Dirección:</label>
-                <input type="text" id="address" name="address">
-            </div>
-            <div class="form-group">
-                <label for="occupation">Ocupación:</label>
-                <input type="text" id="occupation" name="occupation">
-            </div>
-            <div class="form-group">
-                <label for="travelDate">Fecha aproximada del viaje:</label>
-                <input type="date" id="travelDate" name="travelDate" required>
-            </div>
-            <div class="form-group">
-                <label for="advisorCode">Código del asesor:</label>
-                <input type="text" id="advisorCode" name="advisorCode" >
-            </div>
-            <div class="form-group">
-                <label for="destination">Plan/Destino:</label>
-                <select id="destination" name="destination">
-                    <option value="">Seleccione un destino</option>
-                    <option value="Cncún">Cancún</option>
-                    <option value="Punta cana">Punta cana</option>
-                </select>
-            </div>
+        <form action="https://formspree.io/f/mjkkpdzg" method="POST" class="form-horizontal" >
+                <div class="form-group">
+                    <label for="fullName">Nombre y Apellidos:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="documentNumber">Número de documento:</label>
+                    <input type="text" id="documentNumber" name="documentNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Número de contacto:</label>
+                    <input type="text" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad:</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Ocupación:</label>
+                    <input type="text" id="occupation" name="occupation">
+                </div>
+                <div class="form-group">
+                    <label for="travelDate">Fecha aproximada del viaje:</label>
+                    <input type="date" id="travelDate" name="travelDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="advisorCode">Código del asesor:</label>
+                    <input type="text" id="advisorCode" name="advisorCode" >
+                </div>
+                <div class="form-group">
+                    <label for="destination">Plan/Destino:</label>
+                    <select id="destination" name="destination">
+                        <option value="">Seleccione un destino</option>
+                        <option value="Cncún">Cancún</option>
+                        <option value="Punta cana">Punta cana</option>
+                    </select>
+                </div>
 
-              <!-- Después del formulario, antes de los términos y condiciones -->
-<button type="button" id="showTermsBtn" onclick="checkAdvisorCode()">Continuar</button>
+                <!-- Después del formulario, antes de los términos y condiciones -->
+    <button type="button" id="showTermsBtn" onclick="checkAdvisorCode()">Continuar</button>
 
-<div id="terms" style="display:none;">
-    <h3>Términos y Condiciones:</h3>
-    <div>
-        <label><input type="checkbox" required> Comprendo que tengo 12 meses para utilizar el Plan Vacacional siempre y cuando reserve con 60 o 90 días de anterioridad dependiendo de la temporada en la que se realice su viaje.</label>
-        <label><input type="checkbox" required> Comprendo que adquiero Plan Punta Cana el cual incluye: 5 días y 4 noches de alojamiento, alimentación (desayuno, almuerzo, cenas), platos a la carta, snacks, bebidas nacionales y propinas.</label>
-        <label><input type="checkbox" required> Soy consciente que este plan NO INCLUYE tiquetes aéreos, transportes terrestres y tours. Los servicios que no estén incluidos dentro del plan tales como: Habitación vista al mar o temáticas, servicios de guardería o niñeras, entre otros, se deben solicitar directamente en el Hotel y tiene un costo adicional.</label>
-        <label><input type="checkbox" required> Tengo claro que el valor o precios de tiquetes pueden variar según itinerario, temporadas o aerolíneas y que el asesor solo puede brindarle opciones ya sea con nuestra agencia u otras plataformas.</label>
-        <label><input type="checkbox" required> Soy consciente que NO debo comprar tiquetes aéreos hasta NO tener el número de confirmación de mi reserva emitida por servicio al cliente.</label>
-        <label><input type="checkbox" required> Comprendo que el vuelo de llegada a mi destino debe coincidir con el primer día de la reserva asignada en el hotel que adquirí con este plan y que existe una multa cuando se llega al destino en días anteriores.</label>
-        <label><input type="checkbox" required> Soy consciente que cuento con certificado de Garantía de Reservación para mis vacaciones y que al momento de solicitar mi reserva debo pagar 499 USD.</label>
-        <label><input type="checkbox" required> Comprendo que la solicitud de reserva se debe hacer a través del correo electrónico: gerencia@dreams-vacations.com  y para solicitar más información del uso del Plan puedo comunicarme al (+57)3182581663.</label>
-        <label><input type="checkbox" required>  Soy consciente que este plan vacacional es transferible más NO reembolsable</label>
-        <label><input type="checkbox" required> Comprendo que Dreams Vacations S.A.S, no tendrá responsabilidad por inconvenientes que yo o mi grupo familiar pueda tener en migración, y que ocasionen que sea o que seamos devueltos a mi país de origen se dará por entendido que el plan fue utilizado, dado que cada país es autónomo en sus políticas de ingreso por tanto no habrá reembolso alguno.</label>
-        <label><input type="checkbox" required> Comprendo que, al momento de viajar, tanto yo como mi grupo familiar debemos tener pasaporte con una vigencia mínima de 6 meses a la fecha del viaje.</label>
-        <label><input type="checkbox" required> Entiendo que para viajar con menores de edad y poder disfrutar de este plan, debo tener un documento notariado vigente no mayor a 30 días (Custodias o permisos de padres ausentes). </label>
-        <label><input type="checkbox" required> Leí y acepto los términos y condiciones de este plan vacacional </label>
+    <div id="terms" style="display:none;">
+        <h3>Términos y Condiciones:</h3>
+        <div>
+            <label><input type="checkbox" required> Comprendo que tengo 12 meses para utilizar el Plan Vacacional siempre y cuando reserve con 60 o 90 días de anterioridad dependiendo de la temporada en la que se realice su viaje.</label>
+            <label><input type="checkbox" required> Comprendo que adquiero Plan Punta Cana el cual incluye: 5 días y 4 noches de alojamiento, alimentación (desayuno, almuerzo, cenas), platos a la carta, snacks, bebidas nacionales y propinas.</label>
+            <label><input type="checkbox" required> Soy consciente que este plan NO INCLUYE tiquetes aéreos, transportes terrestres y tours. Los servicios que no estén incluidos dentro del plan tales como: Habitación vista al mar o temáticas, servicios de guardería o niñeras, entre otros, se deben solicitar directamente en el Hotel y tiene un costo adicional.</label>
+            <label><input type="checkbox" required> Tengo claro que el valor o precios de tiquetes pueden variar según itinerario, temporadas o aerolíneas y que el asesor solo puede brindarle opciones ya sea con nuestra agencia u otras plataformas.</label>
+            <label><input type="checkbox" required> Soy consciente que NO debo comprar tiquetes aéreos hasta NO tener el número de confirmación de mi reserva emitida por servicio al cliente.</label>
+            <label><input type="checkbox" required> Comprendo que el vuelo de llegada a mi destino debe coincidir con el primer día de la reserva asignada en el hotel que adquirí con este plan y que existe una multa cuando se llega al destino en días anteriores.</label>
+            <label><input type="checkbox" required> Soy consciente que cuento con certificado de Garantía de Reservación para mis vacaciones y que al momento de solicitar mi reserva debo pagar 499 USD.</label>
+            <label><input type="checkbox" required> Comprendo que la solicitud de reserva se debe hacer a través del correo electrónico: gerencia@dreams-vacations.com  y para solicitar más información del uso del Plan puedo comunicarme al (+57)3182581663.</label>
+            <label><input type="checkbox" required>  Soy consciente que este plan vacacional es transferible más NO reembolsable</label>
+            <label><input type="checkbox" required> Comprendo que Dreams Vacations S.A.S, no tendrá responsabilidad por inconvenientes que yo o mi grupo familiar pueda tener en migración, y que ocasionen que sea o que seamos devueltos a mi país de origen se dará por entendido que el plan fue utilizado, dado que cada país es autónomo en sus políticas de ingreso por tanto no habrá reembolso alguno.</label>
+            <label><input type="checkbox" required> Comprendo que, al momento de viajar, tanto yo como mi grupo familiar debemos tener pasaporte con una vigencia mínima de 6 meses a la fecha del viaje.</label>
+            <label><input type="checkbox" required> Entiendo que para viajar con menores de edad y poder disfrutar de este plan, debo tener un documento notariado vigente no mayor a 30 días (Custodias o permisos de padres ausentes). </label>
+            <label><input type="checkbox" required> Leí y acepto los términos y condiciones de este plan vacacional </label>
+        </div>
     </div>
+        <!-- Términos y condiciones aquí -->
+        <script src="scriptpunta.js"></script>
+        <button type="submit" id="downloadBtn" onclick="generatePDF()" style="display:none;">Realizar pago</button>
     </div>
-    <!-- Términos y condiciones aquí -->
-     
-    <button type="button" id="downloadBtn" onclick="generatePDF()" style="display:none;">Realizar pago</button>
-</div>
-</form>
+        </form>
 
 
-    <script src="scriptpunta.js"></script>
 </body>
 
  </body>
  </html>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    
