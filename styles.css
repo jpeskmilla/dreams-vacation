@@ -2237,6 +2237,89 @@ margin-top: 10%;
 }
 
 
+/* IMPERIAL LAS PERLAS */
+.heroImperial {
+    background-image: url('images/imperial-perla/imperial2.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Lora', serif;
+    height: 60vh;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de capa con gradiente para mejorar la legibilidad del texto */
+.heroImperial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+}
+
+/* Contenido del hero (posicionado sobre el gradiente) */
+.heroImperial h1, .heroImperial h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.heroImperial h1 {
+    font-size: 4rem;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    margin-left: 65%;
+    transition: font-size 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.heroImperial h2 {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-left: 55%;
+    margin-top: 5px;
+    transition: font-size 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Media queries para responsividad */
+@media (max-width: 1024px) {
+    .heroImperial h1 {
+        font-size: 3rem;
+        margin-left: 2%;
+    }
+    .heroImperial h2 {
+        font-size: 1.5rem;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroImperial h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+    }
+    .heroImperial h2 {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .heroImperial {
+        padding: 10% 5%;
+    }
+}
+
+
+
+
 
 
 
