@@ -170,7 +170,7 @@ function generatePDF() {
     }); 
     
     doc.text(`Fecha de inicio de contrato: ${fechaHora}`, 105, 150, 'center');
-    doc.text("Av. 5ta Norte #21-22 - Oficina 503 EDIFICIO CENTRO DE VERSALLES", 10, 260, 'left');
+    doc.text("Av. 5ta Norte #21-22 - Oficina 503 EDIFICIO CENTRO DE VERSALLES", 10, 160, 'left');
 
 
     // Guardar el PDF
