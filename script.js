@@ -305,6 +305,8 @@ function generatePDF() {
     doc.line(10, 161, 190, 161); // Position the line under the title
     doc.line(10, 181, 190, 181); // Position the line under the title
     doc.line(10, 201, 190, 201); // Position the line under the title
+    doc.line(10, 221, 190, 221); // Position the line under the title
+
 
     // Add a transparent logo to each page
     const addLogoToPage = () => {
