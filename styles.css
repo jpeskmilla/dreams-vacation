@@ -427,7 +427,6 @@ nav ul li a.active {
 
 .carousel-slide {
     display: flex;
-    overflow: hidden;
 }
 
 .carousel-image {
@@ -435,8 +434,6 @@ nav ul li a.active {
     flex-shrink: 0;
     height: auto;
     margin-right: 130px; /* Espacio entre imágenes */
-    padding: 10px;
-    border-radius: 50;
 }
 
 .carousel-indicators {
@@ -467,7 +464,6 @@ nav ul li a.active {
         margin-right: 0;
     }
 }
-
 /* Hoteles*/
 .trusted-hotels {
     display: flex;

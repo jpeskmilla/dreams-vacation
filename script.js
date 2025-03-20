@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /* Carousel */
+/* Carousel */
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.carousel-image'); // Selecciona todas las imágenes del carrusel
     const totalSlides = slides.length / 2; // Número total de diapositivas (dividido por dos si están duplicadas)
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateCarousel(); // Inicializa el carrusel al cargar
 });
+
 
 
 /*Caruousel 2*/
