@@ -43,6 +43,7 @@ function generatePDF() {
      doc.line(10, 181, 190, 181); // Position the line under the title
      doc.line(10, 201, 190, 201); // Position the line under the title
      doc.line(10, 221, 190, 221); // Position the line under the title
+     doc.line(10, 241, 190, 221); // Position the line under the title
 
  
      // Add a transparent logo to each page
@@ -64,19 +65,20 @@ function generatePDF() {
      doc.setFontSize(12);
      doc.setTextColor(0, 0, 0); // Color negro para el texto
  
-     // Input fields data
+// Input fields data
     const fullName = document.getElementById('fullName').value;
     const documentNumber = document.getElementById('documentNumber').value;
     const email = document.getElementById('email').value;
     const contactNumber = document.getElementById('contactNumber').value;
     const address = document.getElementById('address').value;
+    const department = document.getElementById('department').value;
     const city = document.getElementById('city').value; // Nuevo campo de ciudad
     const occupation = document.getElementById('occupation').value;
     const travelDate = document.getElementById('travelDate').value;
     const advisorCode = document.getElementById('advisorCode').value;
     const destination = document.getElementById('destination').value;
 
-     // Verify advisor code
+    // Verify advisor code
     if (advisorCode !== "34") {
         alert("Invalid advisor code.");
         return;
@@ -90,11 +92,12 @@ function generatePDF() {
     doc.text(`Correo Electrónico: ${email}`, 10, 100);
     doc.text(`Número de contacto: ${contactNumber}`, 10, 120);
     doc.text(`Dirección: ${address}`, 10, 140);
-    doc.text(`Ciudad: ${city}`, 10, 160);
-    doc.text(`Ocupación: ${occupation}`, 10, 180);
-    doc.text(`Fecha de Viaje: ${travelDate}`, 10, 200);
-    doc.text(`Destino: ${destination}`, 10, 220);   
-    
+    doc.text(`Departamento: ${city}`, 10, 160);
+    doc.text(`Ciudad: ${city}`, 10, 180);
+    doc.text(`Ocupación: ${occupation}`, 10, 200);
+    doc.text(`Fecha de Viaje: ${travelDate}`, 10, 220);
+    doc.text(`Destino: ${destination}`, 10, 240);
+        
     // Términos y Condiciones
 
     let terms = [
