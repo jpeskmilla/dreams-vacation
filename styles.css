@@ -667,14 +667,14 @@ nav ul li a.active {
 footer {
     background-color: #000;
     color: #fff;
-    padding: 40px 20px 20px;
+    padding: 25px 20px 20px;
     font-family: "Funnel Display", sans-serif;
   }
   
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Cambiado de center a flex-start */
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -684,36 +684,46 @@ footer {
     margin-right: 40px;
     display: flex;
     align-items: center;
-    height: 100%;
+    height: auto; /* Cambiado de 100% a auto */
+    max-width: 200px; /* Limita el ancho máximo del logo */
   }
   
   .footer-logo img {
-    width: 200px; /* Logo más grande */
-    height: auto;
+    width: 100%; /* Hace que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la proporción */
   }
   
   .footer-column {
     flex: 1;
     min-width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    /* Asegura altura mínima consistente */
+    min-height: 150px;
   }
   
   .footer-column h3 {
     color: #e1b54f; /* Color dorado para los títulos */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 20px; /* Títulos más grandes */
     font-weight: normal;
-}
+    /* Asegura que todos los títulos tengan la misma altura base */
+    height: 30px;
+    line-height: 24px;
+  }
   
   .footer-column ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    /* Esto fuerza a que todas las listas comiencen a la misma altura */
+    margin-top: 0;
   }
   
   .footer-column ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   
   .footer-column a {
@@ -728,7 +738,7 @@ footer {
   }
   
   .footer-column p {
-    margin: 10px 0;
+    margin: 7px 0;
     font-size: 16px; /* Texto más grande */
   }
   
@@ -742,8 +752,8 @@ footer {
   }
   
   .social-icons img {
-    width: 30px; /* Iconos más grandes */
-    height: 30px;
+    width: 60px; /* Iconos más grandes */
+    height: auto;
   }
   
   .footer-bottom {
