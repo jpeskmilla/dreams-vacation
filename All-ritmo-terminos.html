@@ -62,9 +62,81 @@
                 <input type="text" id="address" name="address">
             </div>
             <div class="form-group">
-                <label for="city">Ciudad:</label>
-                <input type="text" id="city" name="city">
+                <label for="department">Departamento:</label>
+                <select id="department" name="department">
+                    <option value="">Seleccione un departamento</option>
+                </select>
             </div>
+            <div class="form-group">
+                <label for="city">Ciudad:</label>
+                <select id="city" name="city">
+                    <option value="">Seleccione una ciudad</option>
+                </select>
+            </div>
+            
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const departmentSelect = document.getElementById("department");
+                    const citySelect = document.getElementById("city");
+        
+                    const data = {
+                        "Amazonas": ["Leticia", "Puerto Nariño"],
+                        "Antioquia": ["Medellín", "Bello", "Envigado", "Itagüí", "Apartadó", "Rionegro", "Turbo", "Caucasia", "Santa Fe de Antioquia", "La Ceja", "Copacabana"],
+                        "Arauca": ["Arauca", "Saravena", "Tame", "Arauquita", "Fortul", "Cravo Norte", "Puerto Rondón"],
+                        "Atlántico": ["Barranquilla", "Soledad", "Malambo", "Sabanalarga", "Puerto Colombia", "Baranoa", "Galapa", "Santo Tomás"],
+                        "Bolívar": ["Cartagena", "Magangué", "Turbaco", "Arjona", "El Carmen de Bolívar", "Mompox", "San Juan Nepomuceno"],
+                        "Boyacá": ["Tunja", "Duitama", "Sogamoso", "Chiquinquirá", "Puerto Boyacá", "Paipa", "Villa de Leyva", "Moniquirá"],
+                        "Caldas": ["Manizales", "La Dorada", "Chinchiná", "Villamaría", "Riosucio", "Aguadas", "Salamina"],
+                        "Caquetá": ["Florencia", "San Vicente del Caguán", "Puerto Rico", "Cartagena del Chairá", "Belén de los Andaquíes"],
+                        "Casanare": ["Yopal", "Aguazul", "Villanueva", "Tauramena", "Monterrey", "Paz de Ariporo"],
+                        "Cauca": ["Popayán", "Santander de Quilichao", "Puerto Tejada", "Patía", "Piendamó", "El Tambo"],
+                        "Cesar": ["Valledupar", "Aguachica", "Curumaní", "Bosconia", "La Paz", "El Copey"],
+                        "Chocó": ["Quibdó", "Istmina", "Condoto", "Riosucio", "Acandí", "Bahía Solano"],
+                        "Córdoba": ["Montería", "Cereté", "Lorica", "Sahagún", "Montelíbano", "Planeta Rica"],
+                        "Cundinamarca": ["Bogotá", "Soacha", "Facatativá", "Zipaquirá", "Chía", "Girardot", "Fusagasugá"],
+                        "Guainía": ["Inírida"],
+                        "Guaviare": ["San José del Guaviare", "Calamar", "El Retorno"],
+                        "Huila": ["Neiva", "Pitalito", "Garzón", "La Plata", "Campoalegre", "Rivera"],
+                        "La Guajira": ["Riohacha", "Maicao", "Uribia", "Fonseca", "San Juan del Cesar", "Manaure"],
+                        "Magdalena": ["Santa Marta", "Ciénaga", "Fundación", "Aracataca", "El Banco", "Pivijay"],
+                        "Meta": ["Villavicencio", "Acacías", "Granada", "Puerto López", "San Martín", "Cumaral"],
+                        "Nariño": ["Pasto", "Tumaco", "Ipiales", "Túquerres", "Sandoná", "La Unión"],
+                        "Norte de Santander": ["Cúcuta", "Ocaña", "Pamplona", "Villa del Rosario", "Los Patios", "Ábrego"],
+                        "Putumayo": ["Mocoa", "Puerto Asís", "Orito", "Valle del Guamuez", "Sibundoy"],
+                        "Quindío": ["Armenia", "Montenegro", "Quimbaya", "Calarcá", "La Tebaida"],
+                        "Risaralda": ["Pereira", "Dosquebradas", "Santa Rosa de Cabal", "La Virginia", "Marsella"],
+                        "San Andrés y Providencia": ["San Andrés", "Providencia"],
+                        "Santander": ["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta", "Barrancabermeja", "San Gil", "Socorro"],
+                        "Sucre": ["Sincelejo", "Corozal", "San Marcos", "Sampués", "Tolú"],
+                        "Tolima": ["Ibagué", "Espinal", "Honda", "Melgar", "Líbano"],
+                        "Valle del Cauca": ["Cali", "Palmira", "Buenaventura", "Tuluá", "Cartago", "Buga", "Yumbo", "Jamundí"],
+                        "Vaupés": ["Mitú", "Carurú", "Taraira"],
+                        "Vichada": ["Puerto Carreño", "La Primavera", "Santa Rosalía"]
+                    };
+        
+                    Object.keys(data).forEach(dep => {
+                        let option = document.createElement("option");
+                        option.value = dep;
+                        option.textContent = dep;
+                        departmentSelect.appendChild(option);
+                    });
+        
+                    departmentSelect.addEventListener("change", function () {
+                        let selectedDepartment = this.value;
+                        citySelect.innerHTML = '<option value="">Seleccione una ciudad</option>';
+                        
+                        if (data[selectedDepartment]) {
+                            data[selectedDepartment].forEach(city => {
+                                let option = document.createElement("option");
+                                option.value = city;
+                                option.textContent = city;
+                                citySelect.appendChild(option);
+                            });
+                        }
+                    });
+                });
+            </script>
+            
             <div class="form-group">
                 <label for="occupation">Ocupación:</label>
                 <input type="text" id="occupation" name="occupation">
