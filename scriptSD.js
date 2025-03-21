@@ -43,7 +43,7 @@ function generatePDF() {
      doc.line(10, 181, 190, 181); // Position the line under the title
      doc.line(10, 201, 190, 201); // Position the line under the title
      doc.line(10, 221, 190, 221); // Position the line under the title
-     doc.line(10, 241, 190, 221); // Position the line under the title
+     doc.line(10, 241, 190, 241); // Position the line under the title
 
  
      // Add a transparent logo to each page
@@ -92,7 +92,7 @@ function generatePDF() {
     doc.text(`Correo Electrónico: ${email}`, 10, 100);
     doc.text(`Número de contacto: ${contactNumber}`, 10, 120);
     doc.text(`Dirección: ${address}`, 10, 140);
-    doc.text(`Departamento: ${city}`, 10, 160);
+    doc.text(`Departamento: ${department}`, 10, 160);
     doc.text(`Ciudad: ${city}`, 10, 180);
     doc.text(`Ocupación: ${occupation}`, 10, 200);
     doc.text(`Fecha de Viaje: ${travelDate}`, 10, 220);
@@ -108,7 +108,7 @@ function generatePDF() {
         "4. Tengo claro que el valor o precios de tiquetes pueden variar según itinerario, temporadas o aerolíneas y que el asesor solo puede brindarle opciones ya sea con nuestra agencia u otras plataformas.",
         "5. Soy consciente que NO debo comprar tiquetes aéreos hasta NO tener el número de confirmación de mi reserva emitida por servicio al cliente.",
         "6. Comprendo que el vuelo de llegada a mi destino debe coincidir con el primer día de la reserva asignada en el hotel que adquirí con este plan y que existe una multa cuando se llega al destino en días anteriores.",
-        "7. Soy consciente que cuento con certificado de Garantía de Reservación para mis vacaciones y que al momento de solicitar mi reserva debo pagar 399 USD",
+        "7. Soy consciente que cuento con certificado de Garantía de Reservación para mis vacaciones y que al momento de solicitar mi reserva debo pagar 499 USD",
         "8. Comprendo que la solicitud de reserva se debe hacer a través del correo electrónico: gerencia@dreams-vacations.com y para solicitar más información del uso del Plan puedo comunicarme al (+57)3182581663",
         "9. Soy consciente que este plan vacacional es transferible más NO reembolsable",
         "10. Comprendo que Dreams Vacations S.A.S, no tendrá responsabilidad por inconvenientes que yo o mi grupo familiar pueda tener en migración, y que ocasionen que sea o que seamos devueltos a mi país de origen se dará por entendido que el plan fue utilizado, dado que cada país es autónomo en sus políticas de ingreso por tanto no habrá reembolso alguno.",

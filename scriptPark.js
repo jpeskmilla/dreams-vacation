@@ -125,7 +125,7 @@ function generatePDF() {
     doc.text(`Correo Electrónico: ${email}`, 10, 100);
     doc.text(`Número de contacto: ${contactNumber}`, 10, 120);
     doc.text(`Dirección: ${address}`, 10, 140);
-    doc.text(`Departamento: ${city}`, 10, 160);
+    doc.text(`Departamento: ${department}`, 10, 160);
     doc.text(`Ciudad: ${city}`, 10, 180);
     doc.text(`Ocupación: ${occupation}`, 10, 200);
     doc.text(`Fecha de Viaje: ${travelDate}`, 10, 220);

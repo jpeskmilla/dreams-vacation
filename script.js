@@ -192,6 +192,7 @@ function generatePDF() {
     const email = document.getElementById('email').value;
     const contactNumber = document.getElementById('contactNumber').value;
     const address = document.getElementById('address').value;
+    const department = document.getElementById('department').value; // Nuevo campo de ciudad
     const city = document.getElementById('city').value; // Nuevo campo de ciudad
     const occupation = document.getElementById('occupation').value;
     const travelDate = document.getElementById('travelDate').value;
@@ -222,10 +223,11 @@ function generatePDF() {
     doc.text(`Email: ${email}`, 10, 60);
     doc.text(`Contacto: ${contactNumber}`, 10, 70);
     doc.text(`Dirección: ${address}`, 10, 80);
-    doc.text(`Ciudad: ${address}`, 10, 90);
-    doc.text(`Ocupación: ${occupation}`, 10, 100);
-    doc.text(`Fecha de Viaje: ${travelDate}`, 10, 110);
-    doc.text(`Destino: ${destination}`, 10, 120);
+    doc.text(`Departamento: ${department}`, 10, 90);
+    doc.text(`Ciudad: ${address}`, 10, 100);
+    doc.text(`Ocupación: ${occupation}`, 10, 110);
+    doc.text(`Fecha de Viaje: ${travelDate}`, 10, 120);
+    doc.text(`Destino: ${destination}`, 10, 130);
 
 
     let terms = [
@@ -358,7 +360,7 @@ function generatePDF() {
     doc.text(`Correo Electrónico: ${email}`, 10, 100);
     doc.text(`Número de contacto: ${contactNumber}`, 10, 120);
     doc.text(`Dirección: ${address}`, 10, 140);
-    doc.text(`Departamento: ${city}`, 10, 160);
+    doc.text(`Departamento: ${department}`, 10, 160);
     doc.text(`Ciudad: ${city}`, 10, 180);
     doc.text(`Ocupación: ${occupation}`, 10, 200);
     doc.text(`Fecha de Viaje: ${travelDate}`, 10, 220);
